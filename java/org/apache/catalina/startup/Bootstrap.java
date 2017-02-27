@@ -45,7 +45,7 @@ import org.apache.juli.logging.LogFactory;
  * @author Remy Maucherat
  */
 public final class Bootstrap {
-
+    //#FISNT#利用工厂方法获得日志对象
     private static final Log log = LogFactory.getLog(Bootstrap.class);
 
 
@@ -74,7 +74,7 @@ public final class Bootstrap {
 
     // -------------------------------------------------------- Private Methods
 
-
+    
     private void initClassLoaders() {
         try {
             commonLoader = createClassLoader("common", null);
